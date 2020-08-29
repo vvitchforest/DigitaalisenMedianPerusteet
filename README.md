@@ -1,3 +1,3 @@
 # DigitaalisenMedianPerusteet
  
-Tähän tallennan Digitaalisen median repusteet -kurssin Web -osuuden tehtävien vastaukset. 
+Tähän tallennan Digitaalisen median perusteet -kurssin Web -osuuden tehtävien vastaukset. 
