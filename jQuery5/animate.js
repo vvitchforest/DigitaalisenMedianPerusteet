@@ -1,5 +1,7 @@
 'use strict';
 
+/*-----------------------Sooth scrolling ---------------------------*/
+
 $(function() {
   $('a').click(function(e) {
     if (this.hash !== '') {
