@@ -1,0 +1,37 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+}
+
+#landingPage {
+    position: relative;
+    background: url(background.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    padding-top: 200px;
+    color: ghostwhite;
+}
+
+#searchTitle {
+    color: ghostwhite;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+footer{
+    color: white;
+}
+
+
+
