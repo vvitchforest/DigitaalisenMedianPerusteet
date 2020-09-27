@@ -1,24 +1,57 @@
 $(function() {
   $('#search-button').click(function() {
-
     if ($('#input').val().length !== 0) {
       searchShow();
+      $('#searchTitle').remove();
+      $('#scrollTop').remove();
       $('#searchResults').
-          before('<div class="p-5" id="searchTitle"><h1 class="text-center">Search Results for ' +
+          before(
+              '<div class="p-5" id="searchTitle"><h1 class="text-center">Search Results for ' +
               $('#input').val() + '</h1></div>');
+
       $('#searchResults').css('padding', '20px 0 0 20px');
       $('#searchResults').css('min-height', '100vh');
       $('#searchResults').css('width', '100vw');
       $('#search-button').attr('href', '#searchTitle');
+     // $('#topButton').css('display', 'flex');
     }
   });
+
+  $('#input').keyup(function(e) {
+    if (e.keyCode === 13) {
+      $('#search-button').click();
+    }
+  });
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 40) {
+      $('#topButton').css('display', 'flex').fadeIn();
+    } else {
+      $('#topButton').fadeOut();
+    }
+  });
+
+  $('a').click(function(e) {
+    if (this.hash !== '') {
+      e.preventDefault();
+
+      let hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top,
+      }, 800, function() {
+        window.location.hash = hash;
+      });
+    }
+  });
+
 });
 
 function searchShow() {
 
-
   let input = $('#input').val();
   $.getJSON('http://api.tvmaze.com/search/shows?q=' + input, function(data) {
+
     $('#showCards').empty();
 
     $.each(data, function(index, value) {
@@ -58,10 +91,7 @@ function searchShow() {
                         </div>
 
  `;
-
       $('#showCards').append($(item));
-
     });
   });
-
 }

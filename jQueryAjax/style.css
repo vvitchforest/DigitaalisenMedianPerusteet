@@ -16,6 +16,10 @@ body {
     color: ghostwhite;
 }
 
+#search-button {
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 992px) {
     .card-columns {
@@ -29,8 +33,16 @@ body {
     }
 }
 
-footer{
-    color: white;
+#topButton{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 24px;
+    border-radius: 50px;
+    width: 45px;
+    height:45px;
+    cursor: pointer;
+    display: none;
 }
 
 
