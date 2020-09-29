@@ -1,5 +1,43 @@
+
 // Your variable overrides
 $body-bg: #000;
-$body-color: #000;
+$body-color: #fff;
+$btn-border-radius: .1rem;
+$btn-padding-y: .3rem;
+$btn-font-size: 12px;
+$jumbotron-bg:  #FF9285;
+$jumbotron-color: #000;
+$card-border-radius: 1.5rem;
+$card-border-width: 0.001rem;
+$card-inner-border-radius: 0;
+
+
+
+
+
+$theme-colors: (
+        "primary": #FF9285,
+        "dark": #000,
+        "secondary": #696969,
+
+);
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card {
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
