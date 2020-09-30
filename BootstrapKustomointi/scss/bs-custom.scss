@@ -10,7 +10,8 @@ $jumbotron-color: #000;
 $card-border-radius: 1.5rem;
 $card-border-width: 0.001rem;
 $card-inner-border-radius: 0;
-
+$font-family-base: "Fira Sans", sans-serif;
+$font-weight: light;
 
 
 
@@ -30,6 +31,27 @@ $theme-colors: (
 .card {
   padding: 1rem;
 }
+
+.card-title {
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.jumbotron {
+
+  border-radius: 0 !important;
+
+}
+
+form {
+  border-radius: $card-border-radius;
+}
+
+
+
+
 
 
 

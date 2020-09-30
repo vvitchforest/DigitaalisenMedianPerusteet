@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Fira+Sans:light">
+    <link rel="stylesheet" href="css/bs-custom.css">
 </head>
 
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <ion-icon name="leaf"></ion-icon>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home<span
-                            class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="row">
+<header class=" site-header fixed-top bg-dark border-bottom border-secondary">
+    <div class="container" style="max-width: 80%;">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <ion-icon name="leaf"></ion-icon>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="container py-5" style="max-width: 80%;">
+    <div class="row">
         <section class="col-sm-8">
             <header class="row">
                 <div class="col">
@@ -59,14 +66,14 @@
             </article>
 
             <section class="row">
-                <header class="col">
+                <header class="col py-3">
                     <h2>
                         Contact us:
                     </h2>
                 </header>
             </section>
 
-            <form>
+            <form class="p-5 border border-secondary">
                 <div class="form-group">
                     <label for="email-input">Your email address</label>
                     <input type="email" class="form-control" id="email-input" aria-describedby="email-help"
@@ -105,9 +112,9 @@
                 </p>
             </div>
         </aside>
-    </main>
+    </div>
+</main>
 
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
