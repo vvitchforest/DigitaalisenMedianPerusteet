@@ -13,6 +13,12 @@ $card-inner-border-radius: 0;
 $font-family-base: "Fira Sans", sans-serif;
 $font-weight: light;
 $spacer: 1rem;
+$font-size-base: 1rem;
+
+$navbar-brand-font-size: 1.5rem;
+
+$border-width: 1px;
+
 
 
 
@@ -58,6 +64,19 @@ $spacers: (
 
 form {
   border-radius: $card-border-radius;
+}
+
+.navbar {
+  letter-spacing: 2px;
+}
+
+#navbarNav {
+  font-size: ($font-size-base * 1.1);
+
+}
+
+ li .border-bottom {
+  border: ($border-width * 5) solid;
 }
 
 
