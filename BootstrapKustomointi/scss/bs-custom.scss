@@ -10,15 +10,12 @@ $jumbotron-color: #000;
 $card-border-radius: 1.5rem;
 $card-border-width: 0.001rem;
 $card-inner-border-radius: 0;
-$font-family-base: "Fira Sans", sans-serif;
-$font-weight: light;
+$font-family-base: "Playfair Display";
+$headings-font-family: "Fira Sans", sans-serif;
 $spacer: 1rem;
 $font-size-base: 1rem;
-
 $navbar-brand-font-size: 1.5rem;
-
 $border-width: 1px;
-
 
 
 
@@ -40,9 +37,12 @@ $spacers: (
         6: ($spacer * 4)
 );
 
+
+
 .btn {
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .card {
@@ -68,6 +68,7 @@ form {
 
 .navbar {
   letter-spacing: 2px;
+  font-family: $headings-font-family;
 }
 
 #navbarNav {
@@ -81,15 +82,6 @@ form {
 
 
 
-
-
-
-
-
-
-
-
-
-
+ 
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
